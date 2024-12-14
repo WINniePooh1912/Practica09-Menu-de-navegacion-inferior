@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Practica9</string>
+    <string name="title_us">Nosotros</string>
+    <string name="title_gallery">Galeria</string>
+    <string name="title_credit">Credito</string>
+
+    <string name="title">Indira &amp; Nuba</string>
+
+    <!-- Nosotros -->
+    <string name="about_us">Es una tienda departamental innovadora y sofisticada que ofrece una experiencia de compra integral para sus clientes. Con una amplia variedad de productos que incluyen moda, accesorios, artículos para el hogar y belleza, Indira y Nuba se especializa en brindar calidad y estilo en cada uno de sus departamentos. </string>
+    <string name="employees">Empleados del mes</string>
+
+    <!-- Galeria -->
+    <string name="catalogue">Catalogo de productos</string>
+
+    <!-- Detalles -->
+    <string name="details">Detalles del producto</string>
+
+    <!-- Credito -->
+    <string name="meeting">Agende una cita</string>
+    <string name="name">Nombre(s)</string>
+    <string name="last_name">Apellido(s)</string>
+
+    <!-- Botones -->
+    <string name="back">Regresar</string>
+    <string name="save">Guardar</string>
+    <string name="web_page">Pagina Oficial</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

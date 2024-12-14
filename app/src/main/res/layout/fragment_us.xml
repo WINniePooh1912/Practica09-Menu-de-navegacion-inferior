@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_pink_light"
+        tools:context=".ui.us.UsFragment"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/title"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgStore"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+        <TextView
+            android:id="@+id/txtAboutUs"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/about_us"
+            android:textAlignment="center"
+            android:textColor="@color/pink_darker"
+            android:lineSpacingExtra="3dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgStore"
+            app:layout_constraintVertical_bias="0.053" />
+
+        <Button
+            android:id="@+id/btnWebPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/title_pink"
+            android:onClick="onClick"
+            android:text="@string/web_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtAboutUs"
+            app:tint="@color/pink_darker" />
+
+        <VideoView
+            android:id="@+id/vvRep"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnWebPage" />
+
+        <TextView
+            android:id="@+id/txtEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/employees"
+            android:gravity="center"
+            android:textColor="@color/pink_darker"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vvRep" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgModelo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:adjustViewBounds="true"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:layout_constraintEnd_toStartOf="@id/imgIntendente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmployees"
+            app:srcCompat="@drawable/modelo"
+            app:strokeColor="@color/background_pink_dark"
+            app:strokeWidth="5dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgIntendente"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:adjustViewBounds="true"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:layout_constraintEnd_toStartOf="@id/imgFotografa"
+            app:layout_constraintStart_toEndOf="@id/imgModelo"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmployees"
+            app:srcCompat="@drawable/intendente"
+            app:strokeColor="@color/pink_darker"
+            app:strokeWidth="5dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgFotografa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:adjustViewBounds="true"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgIntendente"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmployees"
+            app:srcCompat="@drawable/fotografa"
+            app:strokeColor="@color/background_pink_dark"
+            app:strokeWidth="5dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

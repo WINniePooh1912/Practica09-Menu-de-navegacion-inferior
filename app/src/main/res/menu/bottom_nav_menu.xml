@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_us"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_us" />
+
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_gallery" />
+
+    <item
+        android:id="@+id/navigation_credit"
+        android:icon="@drawable/baseline_account_box_24"
+        android:title="@string/title_credit" />
+
+</menu>
